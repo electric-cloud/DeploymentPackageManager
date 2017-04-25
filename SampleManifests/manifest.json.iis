@@ -1,27 +1,28 @@
+/* Values in angled brackets are expected to be provided by the user unles it says optional */
 {
   "application": {
-    "name": "MyIISApplication",
+    "name": "<Name of the Application You want to Create>",
     "version": "1.0",
     "project": "Default",
-    "mode": "PARALLEL",
+    "mode": "SERIAL",
     "components": {
       "component": [{
-        "name": "IIS-MC",
-        "description": "This is a sample application using IIS",
+        "name": "<ComponentName>",
+        "description": "<ComponentDescription-Optional>",
         "tier": "IISTier",
         "artifact": {
           "artifactType": "IIS",
-          "artifactName": "org.iis:blogengine",
-          "artifactVersion": "1.0",
-          "artifactFileName": "blog_engine.zip",
-          "appVirtPath" : "myblog",
-          "bindingInfo": "*:8080",
+          "artifactName": "<org.iis:blogengine>",
+          "artifactVersion": "<1.0>",
+          "artifactFileName": "<blog_engine.zip>",
+          "appVirtPath" : "<myblog>",
+          "bindingInfo": "<*:8080>",
           "bindingProtocol": "http",
-          "bindingsList": "http://localhost:4343",
-          "retrieveToDir": "C:\\\\tmp\\\\artifacts",
-          "webAppPath": "C:\\\\tmp\\\\iisapps\\\\BlogEngine",
-          "websiteName": "blogsitedemo",
-          "websitePath": "C:\\\\tmp\\\\iisapps"
+          "bindingsList": "<http://localhost:4343>",
+          "retrieveToDir": "<C:\\\\tmp\\\\artifacts>",
+          "webAppPath": "<C:\\\\tmp\\\\iisapps\\\\BlogEngine>",
+          "websiteName": "<blogsitedemo>",
+          "websitePath": "<C:\\\\tmp\\\\iisapps>"
         }
       }]
     }
