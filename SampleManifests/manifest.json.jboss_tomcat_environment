@@ -17,7 +17,7 @@
             "sourceDirectory" : "jbosshello",
             "artifactFileName": "jpetstore-mysql.war",
             "jbossConfig" : "jboss7-at-win",
-            "jbossCli" : "C:\\\\Users\\\\build\\\\EAP-7.0.0\\\\bin\\\\jboss-cli.bat",
+            "jbossCli" : "/home/build/EAP-7.0.0/bin/jboss-cli.sh",
             "jdbcConnectionString" : "jdbc:mysql://10.200.1.217:3306/jbosshello",
             "jdbcUsername" : "flowqe",
             "jdbcPassword" : "flowqe"
