@@ -1,4 +1,4 @@
-Manifest files in the SampleManifests can be used to create Deployment package. Once you create the Deployment Package you can use the 'createApplicationFromDeploymentPackage' API to create an Eletric Flow deploy application based on the manifest defnition included with the package.
+Manifest files in the SampleManifests can be used to create Deployment package. Once you create the Deployment Package you can use the 'createApplicationFromDeploymentPackage' API to create an Electric Flow deploy application based on the manifest definition included with the package.
 
 Currently we support the following Application Servers from the Deployment package 
 1. JBOSS
