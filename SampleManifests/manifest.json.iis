@@ -1,4 +1,4 @@
-/* Values in angled brackets are expected to be provided by the user */
+/* Values in angled brackets are expected to be provided by the user unles it says optional */
 {
   "application": {
     "name": "<Name of the Application You want to Create>",
