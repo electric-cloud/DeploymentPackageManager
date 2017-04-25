@@ -1,0 +1,29 @@
+{
+  "application": {
+    "name": "MyIISApplication",
+    "version": "1.0",
+    "project": "Default",
+    "mode": "PARALLEL",
+    "components": {
+      "component": [{
+        "name": "IIS-MC",
+        "description": "This is a sample application using IIS",
+        "tier": "IISTier",
+        "artifact": {
+          "artifactType": "IIS",
+          "artifactName": "org.iis:blogengine",
+          "artifactVersion": "1.0",
+          "artifactFileName": "blog_engine.zip",
+          "appVirtPath" : "myblog",
+          "bindingInfo": "*:8080",
+          "bindingProtocol": "http",
+          "bindingsList": "http://localhost:4343",
+          "retrieveToDir": "C:\\\\tmp\\\\artifacts",
+          "webAppPath": "C:\\\\tmp\\\\iisapps\\\\BlogEngine",
+          "websiteName": "blogsitedemo",
+          "websitePath": "C:\\\\tmp\\\\iisapps"
+        }
+      }]
+    }
+  }
+}
