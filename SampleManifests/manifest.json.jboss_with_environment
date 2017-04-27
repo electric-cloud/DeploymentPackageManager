@@ -1,9 +1,8 @@
 {
   "application": {
-    "name": "jboss_tomcat_app",
+    "name": "jboss_app",
     "version": "2.0",
     "project": "Default",
-    "mode": "PARALLEL",
     "components": {
       "component": [
         {
@@ -18,24 +17,8 @@
             "artifactFileName": "jpetstore-mysql.war",
             "jbossConfig" : "jboss7-at-win",
             "jbossCli" : "/home/build/EAP-7.0.0/bin/jboss-cli.sh",
+			"jdbcDriver" : "com.mysql.jdbc.Driver",
             "jdbcConnectionString" : "jdbc:mysql://10.200.1.217:3306/jbosshello",
-            "jdbcUsername" : "flowqe",
-            "jdbcPassword" : "flowqe"
-          }
-        },
-        {
-          "name": "Tomcat-RC",
-          "description": "This is tomcat component",
-          "tier": "TomcatAppTier",
-          "artifact": {
-            "artifactType": "TOMCAT",
-            "artifactName": "org.ec:npweb",
-            "artifactVersion": "1.0",
-            "sourceDirectory" : "/tmp/tomcathello",
-            "artifactFileName": "npweb.war",
-            "jdbcConnectionString" : "jdbc:mysql://10.200.1.217:3306/tomcathello",
-            "tomcatConfig" : "tomcat7-at-lin",
-            "contextPath": "jpetstore",
             "jdbcUsername" : "flowqe",
             "jdbcPassword" : "flowqe"
           }
@@ -48,8 +31,7 @@
           "name": "Prod",
           "project": "Default",
           "tierMap": {
-            "JBossAppTier": "JBossEnvTier",
-            "TomcatAppTier": "TomcatEnvTier"
+            "JBossAppTier": "JBossEnvTier"
           }
         }
       ]
